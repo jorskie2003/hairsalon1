@@ -10,10 +10,12 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+        
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+        
         <!-- Styles -->
         <style>
             :root {
@@ -21,10 +23,12 @@
                 --black: #121212;
                 --gray-dark: #2c2c2c;
                 --gold-light: #f2e6c6;
+                --white: #ffffff;
             }
             body {
-                background-color: var(--black);
+                background: linear-gradient(to bottom, var(--black), var(--gold)); /* Gradient from black to white */
                 color: var(--gold-light);
+                font-family: 'Cormorant Garamond', serif;
             }
             .bg-gold {
                 background-color: var(--gold);
@@ -45,7 +49,7 @@
         </style>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-black">
+        <div class="min-h-screen">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -73,4 +77,3 @@
         @livewireScripts
     </body>
 </html>
-

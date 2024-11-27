@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class appointment extends Model
+class Appointment extends Model
 {
     protected $table = 'appointments';
 
@@ -17,5 +17,8 @@ class appointment extends Model
 
     protected $dates = [
         'appointment_date',
+    ];
+    protected $casts = [
+        'appointment_date' => 'datetime',
     ];
 }

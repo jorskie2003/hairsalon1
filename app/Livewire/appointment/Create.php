@@ -33,10 +33,7 @@ class Create extends Component
         ];
     }
 
-    public function render()
-    {
-        return view('livewire.appointments.create')->layout('layouts.app');
-    }
+   
     public function store()
     {
         $this->validate(); // Validating data before saving
@@ -50,9 +47,10 @@ class Create extends Component
         ]);
 
         session()->flash('message', 'Appointment created successfully!'); // Flash message on success
-
+        
         // Reset the form data for new entry
         $this->reset();
+        return redirect()->route('appointments.index');
     }
 
     public function submit()
@@ -74,8 +72,10 @@ class Create extends Component
 
     
     flash()->success('Appointment created successfully!');
-    // Reset form fields after successful submission
-    $this->reset();
-    return view('livewire.appointments.index')->layout('layouts.app');
+    return redirect()->route('appointments.index');
 }
+public function render()
+    {
+        return view('livewire.appointments.create')->layout('layouts.app');
+    }
 }

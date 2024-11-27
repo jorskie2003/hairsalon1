@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class AppointmentController extends Controller
 {
     public function store(Request $request)
-    {dd(Appointment::all());
+    {
 
         $validated = $request->validate([
             'name' => 'required|string|max:255',
@@ -17,7 +17,6 @@ class AppointmentController extends Controller
         ]);
     
         Appointment::create($validated);
-    
         return redirect()->back()->with('success', 'Appointment created successfully!');
         
     }

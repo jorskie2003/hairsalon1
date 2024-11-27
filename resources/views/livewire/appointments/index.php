@@ -8,10 +8,10 @@
                     <p class="text-sm text-gray-100">A comprehensive list of all appointments in the system.</p>
                 </div>
                 <div>
-                    <a href="{{ route('appointments.create') }}" 
-                       class="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-indigo-600 rounded-xl shadow-md gap-x-3 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200">
-                        Add Appointment
-                    </a>
+                <a href="{{ route('appointments.create') }}"
+   class="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-indigo-600 rounded-xl shadow-md gap-x-3 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200">
+   Add Appointment
+</a>
                 </div>
             </div>
 

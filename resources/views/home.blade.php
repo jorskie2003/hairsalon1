@@ -1,8 +1,9 @@
 <x-guest-layout>
     <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-black to-gray-900 p-6">
+    
         <div class="bg-black p-10 rounded-lg shadow-xl max-w-lg w-full text-center border border-gold">
             <h1 class="text-4xl font-semibold text-gold mb-6">
-                Welcome to Elegant Hair Salon
+                Welcome to Elegant Salon
             </h1>
             <p class="text-lg text-gray-300 mb-8">
                 Book your appointment today and experience top-notch hair care services. Your style, our expertise!
